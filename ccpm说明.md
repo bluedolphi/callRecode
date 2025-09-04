@@ -1,38 +1,39 @@
-Initial Setup
-/pm:init - Install dependencies and configure GitHub
-PRD Commands
-/pm:prd-new - Launch brainstorming for new product requirement
-/pm:prd-parse - Convert PRD to implementation epic
-/pm:prd-list - List all PRDs
-/pm:prd-edit - Edit existing PRD
-/pm:prd-status - Show PRD implementation status
-Epic Commands
-/pm:epic-decompose - Break epic into task files
-/pm:epic-sync - Push epic and tasks to GitHub
-/pm:epic-oneshot - Decompose and sync in one command
-/pm:epic-list - List all epics
-/pm:epic-show - Display epic and its tasks
-/pm:epic-close - Mark epic as complete
-/pm:epic-edit - Edit epic details
-/pm:epic-refresh - Update epic progress from tasks
-Issue Commands
-/pm:issue-show - Display issue and sub-issues
-/pm:issue-status - Check issue status
-/pm:issue-start - Begin work with specialized agent
-/pm:issue-sync - Push updates to GitHub
-/pm:issue-close - Mark issue as complete
-/pm:issue-reopen - Reopen closed issue
-/pm:issue-edit - Edit issue details
-Workflow Commands
-/pm:next - Show next priority issue with epic context
-/pm:status - Overall project dashboard
-/pm:standup - Daily standup report
-/pm:blocked - Show blocked tasks
-/pm:in-progress - List work in progress
-Sync Commands
-/pm:sync - Full bidirectional sync with GitHub
-/pm:import - Import existing GitHub issues
-Maintenance Commands
-/pm:validate - Check system integrity
-/pm:clean - Archive completed work
-/pm:search - Search across all content
+Initial Setup  
+/pm:init - 安装依赖项并配置GitHub  
+PRD命令  
+/pm:prd-new - 启动新产品需求的头脑风暴  
+/pm:prd-parse - 将PRD转换为实施史诗  
+/pm:prd-list - 列出所有PRD  
+/pm:prd-edit - 编辑现有PRD  
+/pm:prd-status - 显示PRD实施状态  
+史诗命令  
+/pm:epic-decompose - 将史诗分解为任务文件  
+/pm:epic-sync - 将史诗和任务推送至GitHub  
+/pm:epic-oneshot - 一次性完成分解与同步  
+/pm:epic-list - 列出所有史诗  
+/pm:epic-show - 显示史诗及其任务  
+/pm:epic-close - 标记史诗为已完成  
+/pm:epic-edit - 编辑史诗详情  
+/pm:epic-refresh - 根据任务更新史诗进度  
+问题命令  
+/pm:issue-show - 显示问题及其子问题  
+/pm:issue-status - 检查问题状态  
+/pm:issue-start - 使用专用代理开始工作  
+/pm:issue-sync - 将更新推送至GitHub  
+/pm:issue-close - 标记问题为已完成  
+/pm:issue-reopen - 重新打开已关闭的问题  
+/pm:issue-edit - 编辑问题详情  
+工作流命令  
+/pm:next - 显示史诗上下文中的下一个优先级问题  
+/pm:status - 整体项目仪表板  
+/pm:standup - 每日站会报告  
+/pm:blocked - 显示被阻塞的任务  
+/pm:in-progress - 列出进行中的工作  
+同步命令  
+/pm:sync - 与GitHub进行全双向同步  
+/pm:import - 导入现有GitHub问题  
+维护命令  
+/pm:validate - 检查系统完整性  
+/pm:clean - 归档已完成的工作  
+/pm:search - 全局内容搜索  
+
