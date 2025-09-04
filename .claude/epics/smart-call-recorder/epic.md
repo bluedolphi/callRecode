@@ -4,7 +4,7 @@ status: backlog
 created: 2025-09-04T07:46:10Z
 progress: 0%
 prd: .claude/prds/smart-call-recorder.md
-github: [Will be updated when synced to GitHub]
+github: https://github.com/bluedolphi/callRecode/issues/1
 ---
 
 # Epic: 智能通话录音助手 (Smart Call Recorder)
@@ -152,14 +152,14 @@ github: [Will be updated when synced to GitHub]
 3. 微信适配测试 (兼容性风险最高)
 
 ## Tasks Created
-- [ ] 001.md - 项目初始化和依赖配置 (parallel: true)
-- [ ] 002.md - 数据库设计和Room集成 (parallel: true)
-- [ ] 003.md - 录音核心引擎开发 (parallel: false, depends_on: [001])
-- [ ] 004.md - 微信监听AccessibilityService开发 (parallel: true, depends_on: [001])
-- [ ] 005.md - 文件管理和加密系统 (parallel: true, depends_on: [002])
-- [ ] 006.md - 云端上传功能实现 (parallel: true, depends_on: [001, 002])
-- [ ] 007.md - 用户界面开发和交互逻辑 (parallel: true, depends_on: [002, 005])
-- [ ] 008.md - 数据统计和可视化展示 (parallel: true, depends_on: [002, 006])
+- [ ] #5 - 项目初始化和依赖配置 (parallel: true)
+- [ ] #7 - 数据库设计和Room集成 (parallel: true)  
+- [ ] #8 - 录音核心引擎开发 (parallel: false, depends_on: [5])
+- [ ] #9 - 微信监听AccessibilityService开发 (parallel: true, depends_on: [5])
+- [ ] #2 - 文件管理和加密系统 (parallel: true, depends_on: [7])
+- [ ] #3 - 云端上传功能实现 (parallel: true, depends_on: [5, 7])
+- [ ] #4 - 用户界面开发和交互逻辑 (parallel: true, depends_on: [7, 2])
+- [ ] #6 - 数据统计和可视化展示 (parallel: true, depends_on: [7, 3])
 
 Total tasks: 8
 Parallel tasks: 7
