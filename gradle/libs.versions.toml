@@ -1,11 +1,11 @@
 [versions]
-agp = "8.12.2"
-kotlin = "2.0.21"
-coreKtx = "1.10.1"
+agp = "8.1.4"
+kotlin = "1.9.20"
+coreKtx = "1.12.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.6.1"
+lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.0"
 composeBom = "2024.09.00"
 room = "2.6.1"
@@ -14,9 +14,10 @@ coroutines = "1.7.3"
 # Network
 okhttp = "4.11.0"
 retrofit = "2.9.0"
+gson = "2.10.1"
 
 # Material Design
-material = "1.9.0"
+material = "1.10.0"
 
 # MVVM Architecture
 lifecycle = "2.7.0"
@@ -59,6 +60,7 @@ okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhtt
 okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
 # Material Design
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
@@ -74,6 +76,5 @@ mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", versio
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 
