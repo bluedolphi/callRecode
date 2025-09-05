@@ -35,7 +35,9 @@
       "WebSearch",
       "Bash(mkdir:*)",
       "Bash(./gradlew:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh issue:*)"
     ]
   }
 }
