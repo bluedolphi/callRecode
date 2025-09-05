@@ -3,8 +3,6 @@ package com.example.callrecode.data.repository
 import kotlinx.coroutines.flow.Flow
 import com.example.callrecode.data.database.dao.UploadConfigDao
 import com.example.callrecode.data.database.entity.UploadConfigEntity
-import javax.inject.Inject
-import javax.inject.Singleton
 import java.util.UUID
 
 /**
@@ -12,8 +10,7 @@ import java.util.UUID
  * Implements the Repository pattern to provide a clean API for data access
  * and abstracts the data source from the business logic.
  */
-@Singleton
-class UploadConfigRepository @Inject constructor(
+class UploadConfigRepository(
     private val uploadConfigDao: UploadConfigDao
 ) {
     

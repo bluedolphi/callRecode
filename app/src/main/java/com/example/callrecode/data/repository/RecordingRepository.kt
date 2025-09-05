@@ -3,16 +3,13 @@ package com.example.callrecode.data.repository
 import kotlinx.coroutines.flow.Flow
 import com.example.callrecode.data.database.dao.RecordingDao
 import com.example.callrecode.data.database.entity.RecordingEntity
-import javax.inject.Inject
-import javax.inject.Singleton
 
 /**
  * Repository class for recording data operations.
  * Implements the Repository pattern to provide a clean API for data access
  * and abstracts the data source (Room database) from the business logic.
  */
-@Singleton
-class RecordingRepository @Inject constructor(
+class RecordingRepository(
     private val recordingDao: RecordingDao
 ) {
     

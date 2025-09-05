@@ -1,6 +1,10 @@
 package com.example.callrecode
 
 import android.app.Application
+import com.example.callrecode.data.database.CallRecordDatabase
+import com.example.callrecode.data.repository.RecordingRepository
+import com.example.callrecode.data.repository.UploadConfigRepository
+import com.example.callrecode.data.repository.CallLogRepository
 
 /**
  * Custom Application class for the Call Recorder app
@@ -8,16 +12,41 @@ import android.app.Application
  */
 class CallRecorderApplication : Application() {
 
+    // Lazy initialization of database
+    private val database by lazy {
+        CallRecordDatabase.getDatabase(this)
+    }
+
+    // Lazy initialization of repositories
+    private val recordingRepository by lazy {
+        RecordingRepository(database.recordingDao())
+    }
+    
+    private val uploadConfigRepository by lazy {
+        UploadConfigRepository(database.uploadConfigDao())
+    }
+    
+    private val callLogRepository by lazy {
+        CallLogRepository(database.callLogDao())
+    }
+
     override fun onCreate() {
         super.onCreate()
         
-        // Initialize application-wide components here
-        // For example: database, dependency injection, etc.
+        // Set the instance for singleton access
+        synchronized(this) {
+            INSTANCE = this
+        }
         
-        // TODO: Initialize Room Database
-        // TODO: Initialize Repository instances
-        // TODO: Set up dependency injection if using DI framework
+        // Initialize application-wide components
+        // Database will be initialized lazily when first accessed
     }
+
+    // Getter methods for dependency injection
+    fun getDatabase(): CallRecordDatabase = database
+    fun getRecordingRepository(): RecordingRepository = recordingRepository
+    fun getUploadConfigRepository(): UploadConfigRepository = uploadConfigRepository
+    fun getCallLogRepository(): CallLogRepository = callLogRepository
 
     companion object {
         // Static reference to the application instance
@@ -26,7 +55,7 @@ class CallRecorderApplication : Application() {
 
         fun getInstance(): CallRecorderApplication {
             return INSTANCE ?: synchronized(this) {
-                INSTANCE ?: CallRecorderApplication().also { INSTANCE = it }
+                INSTANCE ?: throw IllegalStateException("Application not initialized")
             }
         }
     }
