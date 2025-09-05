@@ -37,7 +37,10 @@
       "Bash(./gradlew:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(gh issue:*)"
+      "Bash(gh issue:*)",
+      "Bash(bash .claude/scripts/pm/issue-start 7)",
+      "Bash(bash .claude/scripts/pm/next.sh)",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }
