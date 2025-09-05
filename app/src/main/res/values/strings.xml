@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">callRecode</string>
+    
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_description">智能通话录音助手需要此权限来检测微信通话状态。我们仅监听微信通话相关界面，不会收集其他个人信息或数据。此功能用于自动开始和结束微信通话录音。</string>
 </resources>
