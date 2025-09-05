@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Material Design 3 Color System for Call Recording App -->
+    
+    <!-- Primary colors - Main brand color for recording actions -->
+    <color name="recording_primary_80">#FFFF6B6B</color>
+    <color name="recording_primary_60">#FFE53E3E</color>
+    <color name="recording_primary_40">#FFC53030</color>
+    <color name="recording_primary_20">#FF9B2C2C</color>
+    
+    <!-- Secondary colors - Supporting actions and navigation -->
+    <color name="call_secondary_80">#FF81C784</color>
+    <color name="call_secondary_60">#FF66BB6A</color>
+    <color name="call_secondary_40">#FF4CAF50</color>
+    <color name="call_secondary_20">#FF388E3C</color>
+    
+    <!-- Tertiary colors - Accent and audio-related features -->
+    <color name="audio_tertiary_80">#FF64B5F6</color>
+    <color name="audio_tertiary_60">#FF42A5F5</color>
+    <color name="audio_tertiary_40">#FF2196F3</color>
+    <color name="audio_tertiary_20">#FF1976D2</color>
+    
+    <!-- Neutral colors for surfaces and backgrounds -->
+    <color name="neutral_99">#FFFFFBFF</color>
+    <color name="neutral_95">#FFF5F5F5</color>
+    <color name="neutral_90">#FFE0E0E0</color>
+    <color name="neutral_80">#FFBDBDBD</color>
+    <color name="neutral_70">#FF9E9E9E</color>
+    <color name="neutral_60">#FF757575</color>
+    <color name="neutral_50">#FF616161</color>
+    <color name="neutral_40">#FF424242</color>
+    <color name="neutral_30">#FF303030</color>
+    <color name="neutral_20">#FF212121</color>
+    <color name="neutral_10">#FF121212</color>
+    <color name="neutral_0">#FF000000</color>
+    
+    <!-- Semantic colors for specific UI states -->
+    <color name="success_green">#FF4CAF50</color>
+    <color name="warning_orange">#FFFF9800</color>
+    <color name="error_red">#FFF44336</color>
+    <color name="info_blue">#FF2196F3</color>
+    
+    <!-- Recording state colors -->
+    <color name="recording_active">#FFE53E3E</color>
+    <color name="recording_paused">#FFFF9800</color>
+    <color name="recording_stopped">#FF757575</color>
+    <color name="recording_processing">#FF2196F3</color>
+    
+    <!-- Call state colors -->
+    <color name="incoming_call">#FF4CAF50</color>
+    <color name="outgoing_call">#FF2196F3</color>
+    <color name="missed_call">#FFE53E3E</color>
+    <color name="unknown_number">#FFFF9800</color>
+    
+    <!-- Surface container colors for Material Design 3 -->
+    <color name="surface_container">#FFF3F3F3</color>
+    <color name="surface_container_high">#FFECECEC</color>
+    <color name="surface_container_highest">#FFE6E6E6</color>
+    <color name="surface_container_low">#FFF9F9F9</color>
+    <color name="surface_container_lowest">#FFFFFFFF</color>
+    
+    <!-- Dark theme surface containers -->
+    <color name="surface_container_dark">#FF1F1F1F</color>
+    <color name="surface_container_high_dark">#FF2B2B2B</color>
+    <color name="surface_container_highest_dark">#FF363636</color>
+    <color name="surface_container_low_dark">#FF1A1A1A</color>
+    <color name="surface_container_lowest_dark">#FF0F0F0F</color>
+    
+    <!-- Legacy colors for backward compatibility -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

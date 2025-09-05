@@ -3,4 +3,108 @@
     
     <!-- Accessibility Service -->
     <string name="accessibility_service_description">智能通话录音助手需要此权限来检测微信通话状态。我们仅监听微信通话相关界面，不会收集其他个人信息或数据。此功能用于自动开始和结束微信通话录音。</string>
+    
+    <!-- Theme and UI related strings -->
+    <string name="theme_light">浅色主题</string>
+    <string name="theme_dark">深色主题</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="theme_settings">主题设置</string>
+    
+    <!-- Recording states -->
+    <string name="recording_active">正在录音</string>
+    <string name="recording_paused">录音暂停</string>
+    <string name="recording_stopped">录音停止</string>
+    <string name="recording_processing">正在处理</string>
+    <string name="recording_ready">准备录音</string>
+    
+    <!-- Call states -->
+    <string name="call_incoming">来电</string>
+    <string name="call_outgoing">拨出</string>
+    <string name="call_missed">未接</string>
+    <string name="call_unknown">未知号码</string>
+    <string name="call_duration">通话时长</string>
+    
+    <!-- Navigation and UI -->
+    <string name="navigation_recordings">录音列表</string>
+    <string name="navigation_settings">设置</string>
+    <string name="navigation_about">关于</string>
+    
+    <!-- Recording controls -->
+    <string name="action_start_recording">开始录音</string>
+    <string name="action_stop_recording">停止录音</string>
+    <string name="action_pause_recording">暂停录音</string>
+    <string name="action_resume_recording">继续录音</string>
+    <string name="action_play">播放</string>
+    <string name="action_pause">暂停</string>
+    <string name="action_delete">删除</string>
+    <string name="action_share">分享</string>
+    <string name="action_export">导出</string>
+    
+    <!-- Settings categories -->
+    <string name="settings_recording_mode">录音模式</string>
+    <string name="settings_unknown_numbers">陌生号码</string>
+    <string name="settings_audio_quality">音频质量</string>
+    <string name="settings_storage">存储管理</string>
+    <string name="settings_permissions">权限管理</string>
+    <string name="settings_appearance">外观设置</string>
+    
+    <!-- Quality settings -->
+    <string name="quality_high">高质量</string>
+    <string name="quality_medium">标准质量</string>
+    <string name="quality_low">省空间</string>
+    <string name="quality_custom">自定义</string>
+    
+    <!-- File information -->
+    <string name="file_size">文件大小</string>
+    <string name="file_duration">录音时长</string>
+    <string name="file_date">录音日期</string>
+    <string name="file_format">文件格式</string>
+    
+    <!-- Permissions -->
+    <string name="permission_microphone">麦克风权限</string>
+    <string name="permission_phone">电话权限</string>
+    <string name="permission_storage">存储权限</string>
+    <string name="permission_overlay">悬浮窗权限</string>
+    <string name="permission_required">需要权限</string>
+    <string name="permission_granted">权限已授予</string>
+    <string name="permission_denied">权限被拒绝</string>
+    
+    <!-- Empty states and messages -->
+    <string name="empty_recordings">暂无录音文件</string>
+    <string name="empty_recordings_subtitle">开始通话时将自动录音</string>
+    <string name="loading">加载中…</string>
+    <string name="error_generic">发生错误</string>
+    <string name="retry">重试</string>
+    
+    <!-- Content descriptions for accessibility -->
+    <string name="cd_recording_button">录音按钮</string>
+    <string name="cd_play_button">播放按钮</string>
+    <string name="cd_pause_button">暂停按钮</string>
+    <string name="cd_delete_button">删除按钮</string>
+    <string name="cd_share_button">分享按钮</string>
+    <string name="cd_settings_button">设置按钮</string>
+    <string name="cd_contact_avatar">联系人头像</string>
+    <string name="cd_recording_status">录音状态指示器</string>
+    <string name="cd_audio_waveform">音频波形</string>
+    
+    <!-- Status messages -->
+    <string name="status_recording_saved">录音已保存</string>
+    <string name="status_recording_deleted">录音已删除</string>
+    <string name="status_recording_shared">录音已分享</string>
+    <string name="status_permissions_missing">权限不足</string>
+    <string name="status_storage_full">存储空间不足</string>
+    
+    <!-- Dialog titles and messages -->
+    <string name="dialog_delete_title">删除录音</string>
+    <string name="dialog_delete_message">确定要删除这个录音文件吗？此操作无法撤销。</string>
+    <string name="dialog_permission_title">需要权限</string>
+    <string name="dialog_permission_message">请授予必要权限以正常使用录音功能。</string>
+    <string name="button_confirm">确定</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_settings">设置</string>
+    
+    <!-- Time formats -->
+    <string name="time_format_hours_minutes_seconds">%1$d:%2$02d:%3$02d</string>
+    <string name="time_format_minutes_seconds">%1$d:%2$02d</string>
+    <string name="time_format_seconds">0:%1$02d</string>
 </resources>

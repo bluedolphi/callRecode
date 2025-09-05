@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 3 Extended Styles for Call Recording App -->
+    
+    <!-- Text Appearance Styles -->
+    <style name="TextAppearance.CallRecode.RecordingTime" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+    
+    <style name="TextAppearance.CallRecode.CallDuration" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    
+    <style name="TextAppearance.CallRecode.ContactName" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="TextAppearance.CallRecode.PhoneNumber" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="TextAppearance.CallRecode.StatusIndicator" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    
+    <!-- Layout Styles -->
+    <style name="Widget.CallRecode.Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/container_padding_horizontal</item>
+    </style>
+    
+    <style name="Widget.CallRecode.Container.Centered">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- Card View Styles -->
+    <style name="Widget.CallRecode.CardView.Recording" parent="Widget.CallRecode.CardView">
+        <item name="cardBackgroundColor">@color/surface_container_high</item>
+        <item name="strokeColor">@color/recording_primary_40</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    
+    <style name="Widget.CallRecode.CardView.Call" parent="Widget.CallRecode.CardView">
+        <item name="cardBackgroundColor">@color/surface_container</item>
+    </style>
+    
+    <!-- Button Styles - Extended -->
+    <style name="Widget.CallRecode.Button.Outline" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeColor">@color/recording_primary_40</item>
+        <item name="android:textColor">@color/recording_primary_40</item>
+    </style>
+    
+    <style name="Widget.CallRecode.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/recording_primary_40</item>
+    </style>
+    
+    <style name="Widget.CallRecode.Button.IconButton" parent="Widget.Material3.Button.IconButton">
+        <item name="iconSize">@dimen/icon_size_medium</item>
+        <item name="iconTint">@color/recording_primary_40</item>
+    </style>
+    
+    <!-- FAB Styles -->
+    <style name="Widget.CallRecode.FloatingActionButton" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/recording_primary_40</item>
+        <item name="tint">@color/neutral_99</item>
+        <item name="fabSize">normal</item>
+    </style>
+    
+    <style name="Widget.CallRecode.FloatingActionButton.Recording" parent="Widget.CallRecode.FloatingActionButton">
+        <item name="backgroundTint">@color/recording_active</item>
+        <item name="fabSize">normal</item>
+    </style>
+    
+    <!-- Chip Styles -->
+    <style name="Widget.CallRecode.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/surface_container_high</item>
+        <item name="chipStrokeColor">@color/neutral_50</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/neutral_10</item>
+    </style>
+    
+    <style name="Widget.CallRecode.Chip.Recording" parent="Widget.CallRecode.Chip">
+        <item name="chipBackgroundColor">@color/recording_primary_80</item>
+        <item name="chipStrokeColor">@color/recording_primary_40</item>
+        <item name="android:textColor">@color/recording_primary_20</item>
+    </style>
+    
+    <!-- Switch and Checkbox Styles -->
+    <style name="Widget.CallRecode.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/recording_primary_40</item>
+        <item name="trackTint">@color/recording_primary_80</item>
+    </style>
+    
+    <style name="Widget.CallRecode.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/recording_primary_40</item>
+    </style>
+    
+    <!-- Progress Indicator Styles -->
+    <style name="Widget.CallRecode.ProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">@color/recording_primary_40</item>
+        <item name="trackColor">@color/surface_container_high</item>
+        <item name="indicatorSize">@dimen/progress_size_medium</item>
+    </style>
+    
+    <style name="Widget.CallRecode.ProgressIndicator.Small" parent="Widget.CallRecode.ProgressIndicator">
+        <item name="indicatorSize">@dimen/progress_size_small</item>
+    </style>
+    
+    <style name="Widget.CallRecode.ProgressIndicator.Large" parent="Widget.CallRecode.ProgressIndicator">
+        <item name="indicatorSize">@dimen/progress_size_large</item>
+    </style>
+    
+    <!-- Bottom Sheet Style -->
+    <style name="Widget.CallRecode.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="backgroundTint">@color/surface_container_low</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.CallRecode.BottomSheet</item>
+    </style>
+    
+    <!-- Shape Appearances -->
+    <style name="ShapeAppearance.CallRecode.BottomSheet" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerSizeTopLeft">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/bottom_sheet_corner_radius</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+    
+    <!-- Divider Style -->
+    <style name="Widget.CallRecode.Divider" parent="Widget.Material3.MaterialDivider">
+        <item name="dividerColor">@color/neutral_80</item>
+        <item name="dividerThickness">@dimen/list_divider_height</item>
+        <item name="dividerInsetStart">@dimen/list_divider_margin</item>
+    </style>
+    
+    <!-- Toolbar/ActionBar Styles -->
+    <style name="Widget.CallRecode.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.Material3.HeadlineSmall</item>
+        <item name="titleTextColor">@color/neutral_99</item>
+        <item name="navigationIconTint">@color/neutral_99</item>
+    </style>
+    
+    <!-- TabLayout Style -->
+    <style name="Widget.CallRecode.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="tabIndicatorColor">@color/recording_primary_40</item>
+        <item name="tabSelectedTextColor">@color/recording_primary_40</item>
+        <item name="tabTextColor">@color/neutral_60</item>
+        <item name="tabRippleColor">@color/recording_primary_80</item>
+    </style>
+</resources>
