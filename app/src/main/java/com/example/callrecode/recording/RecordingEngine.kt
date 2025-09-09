@@ -230,14 +230,36 @@ class RecordingEngine(
     // Phone state event handlers
     fun onIncomingCall(phoneNumber: String?) {
         Log.d(TAG, "Incoming call detected: $phoneNumber")
-        // TODO: Check recording mode and decide whether to start recording
+        
+        recordingScope.launch {
+            val recordingModeManager = RecordingModeManager(context)
+            
+            // Check if should prompt for unknown number
+            if (recordingModeManager.shouldPromptForUnknown(phoneNumber)) {
+                Log.d(TAG, "Should prompt for unknown number: $phoneNumber")
+                // The dialog will be shown by the UI layer when it receives this event
+                // For now, just log it - UI integration will handle the dialog
+            } else if (recordingModeManager.shouldAutoRecord(phoneNumber)) {
+                Log.d(TAG, "Auto-recording enabled for: $phoneNumber")
+                // Auto-record will be handled in onCallStarted
+            } else {
+                Log.d(TAG, "No recording needed for: $phoneNumber")
+            }
+        }
     }
     
     fun onCallStarted(phoneNumber: String?) {
         Log.d(TAG, "Call started: $phoneNumber")
-        if (defaultMode == RecordingMode.AUTO) {
-            recordingScope.launch {
+        
+        recordingScope.launch {
+            val recordingModeManager = RecordingModeManager(context)
+            
+            // Check if should auto-record this call
+            if (recordingModeManager.shouldAutoRecord(phoneNumber)) {
+                Log.d(TAG, "Auto-starting recording for: $phoneNumber")
                 startRecording(phoneNumber)
+            } else {
+                Log.d(TAG, "Not auto-recording for: $phoneNumber (mode: ${recordingModeManager.getCurrentMode()})")
             }
         }
     }

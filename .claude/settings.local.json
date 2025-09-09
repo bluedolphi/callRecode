@@ -40,7 +40,11 @@
       "Bash(gh issue:*)",
       "Bash(bash .claude/scripts/pm/issue-start 7)",
       "Bash(bash .claude/scripts/pm/next.sh)",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(git worktree list)",
+      "Bash(bash:*)"
     ]
   }
 }

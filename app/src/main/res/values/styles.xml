@@ -46,17 +46,38 @@
     </style>
     
     <!-- Card View Styles -->
+    <style name="Widget.CallRecode.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
     <style name="Widget.CallRecode.CardView.Recording" parent="Widget.CallRecode.CardView">
         <item name="cardBackgroundColor">@color/surface_container_high</item>
         <item name="strokeColor">@color/recording_primary_40</item>
         <item name="strokeWidth">2dp</item>
     </style>
-    
+
     <style name="Widget.CallRecode.CardView.Call" parent="Widget.CallRecode.CardView">
         <item name="cardBackgroundColor">@color/surface_container</item>
     </style>
     
     <!-- Button Styles - Extended -->
+    <style name="Widget.CallRecode.Button" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Widget.CallRecode.Button.Recording" parent="Widget.CallRecode.Button">
+        <item name="backgroundTint">@color/recording_active</item>
+        <item name="android:textColor">@color/neutral_99</item>
+    </style>
+
+    <style name="Widget.CallRecode.Button.Call" parent="Widget.CallRecode.Button">
+        <item name="backgroundTint">@color/call_secondary_40</item>
+        <item name="android:textColor">@color/neutral_99</item>
+    </style>
+
     <style name="Widget.CallRecode.Button.Outline" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:textAllCaps">false</item>
         <item name="cornerRadius">12dp</item>
